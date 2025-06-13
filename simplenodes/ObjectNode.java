@@ -10,4 +10,8 @@ public class ObjectNode<E> extends ArrayListNode{
    }
    
    public E getObject(){return object;}
+
+   @Override public String toString(){
+      return object.toString()+" :\n"+super.toString();
+   }
 }
